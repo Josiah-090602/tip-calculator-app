@@ -11,29 +11,45 @@
 </head>
 <body>
     <p class="splitter">SPLI<br>TTER</p>
-  
+
   <main class="main-con">
-    <form>
+    <form class="input-form">
+        <div class="input-con">
+        <label for="#bill">Bill</label>
+        <input class="input-field" type="number" name="" id="bill" placeholder="0">
+        </div>
 
+        <div class="selection-con">
+          <label>Select Tip %</label>
+          <div class="tip-selection">
+          <button class="tip-percent" tip="5">5%</button>
+          <button class="tip-percent" tip="10">10%</button>
+          <button class="tip-percent" tip="15">15%</button>
+          <button class="tip-percent" tip="25">25%</button>
+          <button class="tip-percent" tip="50">50%</button>
+          <input class="tip-percent" type="number" name="" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        
+        <div class="input-con">
+          <label for="#count">Number of People</label>
+          <input class="input-field" type="number" name="" id="count" placeholder="0">
+        </div>
     </form>
+    <section class="preview">
+        <div class="preview-wrapper">
+            <div class="computed-con">
+              <p>Tip Amount<span>/ people</span></p>
+              <span id="tip-amount">$0.00</span>
+            </div>
+            <div class="computed-con">
+              <p>Total<span>/ people</span></p>
+              <span id="total-amount">$0.00</span>
+            </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+          </div>
+          <button id="reset-button">RESET</button>
+    </section>
   </main>
 
     <div class="attribution">
