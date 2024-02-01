@@ -92,8 +92,21 @@ label {
     color: var(--White);
     font-size: var(--FontsizeInputs);
     border-radius: 5px;
-    border: none;
-    
+    border: none; 
+    cursor: pointer; 
+}
+
+.tip-percent{
+    height: 3rem;
+    width: 8rem;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    font-size: var(--FontsizeInputs);
+    border-radius: 5px;
+    border: none;  
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .tip-percent:last-child{
@@ -151,7 +164,7 @@ label {
 }
 
 
-#reset-button{
+#reset-button, #calculate-button{
     height: 3rem;
     width: 100%;
     background-color: var(--Light-grayish-cyan);
@@ -160,6 +173,8 @@ label {
     border: none;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-top:10px;
+    cursor: pointer;
 }
 
 
